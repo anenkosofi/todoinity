@@ -8,6 +8,13 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        },
+        "architect": {
+          "build": {
+            "options": {
+              "baseHref": "/todoinity/"
+            }
+          }
         }
       },
       "root": "",
