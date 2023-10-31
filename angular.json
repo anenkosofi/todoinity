@@ -8,13 +8,6 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
-        },
-        "architect": {
-          "build": {
-            "options": {
-              "baseHref": "/todoinity/"
-            }
-          }
         }
       },
       "root": "",
@@ -27,6 +20,7 @@
             "outputPath": "dist/todoinity",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "baseHref": "/todoinity/",
             "polyfills": [
               "zone.js"
             ],
