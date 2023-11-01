@@ -1,0 +1,41 @@
+<aside class="nav-bar">
+      <ul class="nav-bar__list">
+            <li class="nav-bar__item">
+                  <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                        true}" ariaCurrentWhenActive="page" class="nav-bar__link">
+                        <svg-icon src="assets/svg/home.svg"></svg-icon>
+                        <span>Home</span>
+                  </a>
+            </li>
+            <li class="nav-bar__item">
+                  <a routerLink="/task" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-bar__link">
+                        <svg-icon src="assets/svg/task.svg"></svg-icon>
+                        <span>Task</span>
+                  </a>
+            </li>
+            <li class="nav-bar__item">
+                  <a routerLink="/dashboard" routerLinkActive="active" ariaCurrentWhenActive="page"
+                        class="nav-bar__link">
+                        <svg-icon src="assets/svg/dashboard.svg"></svg-icon>
+                        <span>Dashboard</span>
+                  </a>
+            </li>
+            <li class="nav-bar__item">
+                  <a routerLink="/settings" routerLinkActive="active" ariaCurrentWhenActive="page"
+                        class="nav-bar__link">
+                        <svg-icon src="assets/svg/settings.svg"></svg-icon>
+                        <span>Settings</span>
+                  </a>
+            </li>
+      </ul>
+      <div class="nav-bar__box">
+            <img src="assets/png/tick.png" alt="Add a task" class="nav-bar__pic">
+            <div class="nav-bar__description">
+                  <p>You can add more tasks for your daily!</p>
+                  <a routerLink="/task" class="nav-bar__button">
+                        <svg-icon src="assets/svg/plus-small.svg"></svg-icon>
+                        <span>Add task</span>
+                  </a>
+            </div>
+      </div>
+</aside>
