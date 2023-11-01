@@ -1,0 +1,9 @@
+.layout {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  height: 100vh;
+}
+
+main {
+  padding: 8px 0;
+}

@@ -1,0 +1,92 @@
+@import '../../../styles/shared.scss';
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 36px;
+  color: $primary-light-white;
+  background-color: $primary-purple;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__item {
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: $primary-light-white;
+    }
+
+    span {
+      font-weight: 400;
+      line-height: 1.2;
+    }
+  }
+
+  &__link {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    border-radius: 12px;
+    transition: background-color 250ms $timing-function;
+
+    &:hover {
+      background-color: $primary-light-purple;
+    }
+
+    &.active {
+      background-color: $primary-light-purple;
+    }
+  }
+
+  &__box {
+    position: relative;
+    width: 100%;
+    padding: 120px 64px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $secondary-light-purple;
+    border-radius: 20px;
+  }
+
+  &__pic {
+    position: absolute;
+    top: -40%;
+    transform: rotateZ(16deg);
+    width: 164px;
+  }
+
+  &__description {
+    p {
+      margin-bottom: 20px;
+      font-weight: 400;
+      line-height: 1.2;
+      text-align: center;
+      color: $secondary-dark;
+    }
+  }
+
+  &__button {
+    width: 148px;
+    height: 52px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-purple;
+    border-radius: 12px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: $primary-light-white;
+    }
+  }
+}
